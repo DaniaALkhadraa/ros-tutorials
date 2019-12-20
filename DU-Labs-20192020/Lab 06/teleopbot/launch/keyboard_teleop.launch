@@ -1,0 +1,7 @@
+<launch>
+  <!-- turtlebot_teleop_key already has its own built in velocity smoother -->
+  <node pkg="m2wr_description" type="key_publisher.py" name="keyboard_driver"  output="screen"/>
+  
+  <node pkg="m2wr_description" type="keys_to_twist_with_ramps.py" name="keys_to_twist"  output="screen"/>
+
+</launch>
